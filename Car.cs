@@ -11,10 +11,23 @@ namespace ClassApp
 
         private string _carName;//Member Value Of Class Car that are instantiated on the main Class
         private string _carBrand;
+        private bool _isLuxury;
+
 
         public string CarName { get => _carName; set => _carName = value; }//Properties Getter and Setter That access Private Fields
-        public string CarBrand { get => _carBrand;
-            set { if (string.IsNullOrEmpty(value)) {
+        public string CarBrand { get
+            {
+                if (_isLuxury)
+                {
+                    return _carBrand += " Luxury Edition " ;
+                }
+                else
+                {
+                    return _carBrand;
+                }
+            }
+
+            set { if (string.IsNullOrEmpty(value)) {//Set Properties To Modify Other Parameters that come from initaliztion of main Class
                     Console.WriteLine("Input is Empty");
                     _carBrand = "Default_val";
                 }
@@ -25,12 +38,13 @@ namespace ClassApp
             }
         }
 
-        public Car(string carname,string carBrand) {//Constructor Class of Car that initalised the Parameters of Car Class
+        public bool IsLuxury { get => _isLuxury; set => _isLuxury = value; }
+
+        public Car(string carname,string carBrand,bool isLuxury) {//Constructor Class of Car that initalised the Parameters of Car Class
             CarBrand = carBrand;
             CarName = carname;
-            
-
-            Console.WriteLine($"This is a {carname} of the {carBrand} Brand ");
+            IsLuxury= isLuxury;
+            Console.WriteLine($"This is a {carname} of the {carBrand} ");
         }
 
        
