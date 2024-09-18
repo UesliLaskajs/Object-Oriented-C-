@@ -15,7 +15,7 @@ namespace ClassApp
 
 
         public string CarName { get => _carName; set => _carName = value; }//Properties Getter and Setter That access Private Fields
-        public string CarBrand { get
+        public string CarBrand { get//used The Private Field _isLuxury on another getter Property
             {
                 if (_isLuxury)
                 {
@@ -40,12 +40,19 @@ namespace ClassApp
 
         public bool IsLuxury { get => _isLuxury; set => _isLuxury = value; }
 
+        public void  Drive()
+        {
+             Console.WriteLine("Driving");
+        }
+
         public Car(string carname,string carBrand,bool isLuxury) {//Constructor Class of Car that initalised the Parameters of Car Class
             CarBrand = carBrand;
             CarName = carname;
             IsLuxury= isLuxury;
             Console.WriteLine($"This is a {carname} of the {carBrand} ");
         }
+
+        
 
        
     }
