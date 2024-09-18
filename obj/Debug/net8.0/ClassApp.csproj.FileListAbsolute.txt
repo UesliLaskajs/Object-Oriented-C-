@@ -12,3 +12,4 @@ C:\Users\User\source\repos\ClassApp\ClassApp\obj\Debug\net8.0\refint\ClassApp.dl
 C:\Users\User\source\repos\ClassApp\ClassApp\obj\Debug\net8.0\ClassApp.pdb
 C:\Users\User\source\repos\ClassApp\ClassApp\obj\Debug\net8.0\ClassApp.genruntimeconfig.cache
 C:\Users\User\source\repos\ClassApp\ClassApp\obj\Debug\net8.0\ref\ClassApp.dll
+C:\Users\User\source\repos\ClassApp\ClassApp\obj\Debug\net8.0\ClassApp.sourcelink.json
