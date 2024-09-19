@@ -15,8 +15,20 @@
 
 
             Customer customer = new Customer("Uesli", "Laska", 20);//Initialized an instance object of class Customer
+            Customer customer1 = new Customer("Bruno", "Laska", 13);
+            customer.GetCustomerDetail();
+            customer1.GetCustomerDetail();
+            customer.SetDetails("Bruno", "Laska", 13);//Set the Details of the Class From a Method Created in the class and called from the object
 
-            customer.SetDetails("Bruno", "Laska", 13);//
+
+
+            Rectangle rectangle=new Rectangle();
+            rectangle.width = 5;
+            rectangle.height = 5;
+            rectangle.Area();
+
+            Customer.Greet();//This is a Static Method wich is no need to instantiate an object ,It Works on the class itself
+            
 
             Console.WriteLine($"{customer.Name}");
             Console.ReadKey();
