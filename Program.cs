@@ -16,11 +16,11 @@
 
             Customer customer = new Customer("Uesli", "Laska", 20);//Initialized an instance object of class Customer
             Customer customer1 = new Customer("Bruno", "Laska", 13);
-            customer.GetCustomerDetail();
+            customer.GetCustomerDetail();//Gets Customer Details 
             customer1.GetCustomerDetail();
             customer.SetDetails("Bruno", "Laska", 13);//Set the Details of the Class From a Method Created in the class and called from the object
 
-
+            customer1._Password = "Bruno123";
 
             Rectangle rectangle=new Rectangle();
             rectangle.width = 5;
